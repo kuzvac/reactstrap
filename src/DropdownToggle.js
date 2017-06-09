@@ -75,6 +75,9 @@ class DropdownToggle extends React.Component {
       props.href = '#';
     } else if (!tag) {
       Tag = Button;
+      if (cssModule) {
+        props['cssModule'] = cssModule;
+      }
     } else {
       Tag = tag;
     }
